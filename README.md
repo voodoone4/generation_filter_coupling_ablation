@@ -1,4 +1,4 @@
-# leakage_ablation_matrix_15567cb3
+# generation_filter_coupling_ablation
 
 （合成数据的来源标注场景）生成与筛选的耦合的分数该怎么读才不会被误用？用泄漏与重复检测标注它能说明什么、不能说明什么。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python leakage_ablation_matrix_15567cb3.py --help
-python leakage_ablation_matrix_15567cb3.py --input sample.txt
-python leakage_ablation_matrix_15567cb3.py --input sample.txt --json
+python generation_filter_coupling_ablation.py --help
+python generation_filter_coupling_ablation.py --input sample.txt
+python generation_filter_coupling_ablation.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「消融矩阵」使用分隔符 `,` 区分标签与载荷。
@@ -50,7 +50,7 @@ python leakage_ablation_matrix_15567cb3.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python leakage_ablation_matrix_15567cb3.py --input sample.txt --json`；
+2. 运行 `python generation_filter_coupling_ablation.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
